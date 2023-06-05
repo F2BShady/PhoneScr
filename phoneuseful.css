@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+#phone {
+    width: 350px;
+    height: 700px;
+    background-color: #000;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#screen {
+    width: 100%;
+    height: calc(100% - 30px);
+    background-color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#status-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    padding: 0 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+#signal-bar {
+    width: 40px;
+    height: 15px;
+    background-color: #00ff00;
+}
+
+#time {
+    font-size: 12px;
+}
+
+#battery {
+    position: relative;
+    width: 40px;
+    height: 15px;
+    background-color: #fff;
+}
+
+#battery-level {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background-color: #00ff00;
+}
+
+#apps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.app img {
+    width: 80px;
+    height: 80px;
+}
+
+.app span {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+#message-container {
+    display: none;
+}
+
+#message-box {
+    height: calc(100% - 40px);
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#chat-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#chat-messages {
+    height: calc(100% - 80px);
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+#input-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#message-input {
+    flex-grow: 1;
+    padding: 5px;
+}
+
+#send-button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#instagram-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+}
+
+#instagram-image {
+    position: relative;
+}
+
+#instagram-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#instagram-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}

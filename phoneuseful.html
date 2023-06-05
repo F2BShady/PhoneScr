@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Telefon Arayüzü</title>
+    <link rel="stylesheet" type="text/css" href="phoneuseful.css">
+</head>
+<body>
+    <div id="phone">
+        <div id="screen">
+            <div id="status-bar">
+                <div id="signal-bar"></div>
+                <div id="time">10:00</div>
+                <div id="battery"><div id="battery-level"></div></div>
+            </div>
+            <div id="apps">
+                <div class="app" id="whatsapp">
+                    <img src="whatsapp.png" alt="WhatsApp">
+                    <span>WhatsApp</span>
+                </div>
+                <div class="app" id="instagram">
+                    <img src="instagram.png" alt="Instagram">
+                    <span>Instagram</span>
+                </div>
+                <!-- Diğer uygulamaları da ekleyebilirsiniz -->
+            </div>
+            <div id="message-container">
+                <div id="message-box">
+                    <div id="chat-header">WhatsApp</div>
+                    <div id="chat-messages">
+                        <!-- Burada WhatsApp mesajlarını gösterebilirsiniz -->
+                    </div>
+                    <div id="input-box">
+                        <input type="text" id="message-input" placeholder="Mesajınızı yazın...">
+                        <button id="send-button">Gönder</button>
+                    </div>
+                </div>
+                <div id="instagram-modal">
+                    <div id="instagram-image">
+                        <img src="instagram-image.png" alt="Instagram Image">
+                        <div id="instagram-overlay">Bakımda</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="users.js"></script>
+</body>
+</html>
